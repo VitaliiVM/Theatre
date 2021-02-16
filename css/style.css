@@ -1,0 +1,1130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+     background: rgba(51, 51, 51, 1);
+}
+
+.main_section {
+    width: 100%;
+    height: 130vh;
+    background: url(../img/Rectangle\ 3.png);
+    background-size: cover;
+}
+
+header {
+    width: 100%;display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_container {
+    width: 1110px;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    
+}
+
+.links {
+    text-decoration: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-right: 60px;
+}
+
+.header_container_phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone {
+     font-family: 'Open Sans Condensed', sans-serif;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 16px;
+     line-height: 22px;
+     text-align: right;
+     letter-spacing: 0.05em;
+     text-transform: uppercase;
+     color: #FFFFFF;
+}
+
+.header_container_line {
+    width: 119px;
+    height: 0px;
+    border: 1px solid #D1A954;
+    background: #D1A954;
+}
+
+.soc_links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 150px;
+    height: 100vh;
+    background-color: #333333d0;
+    z-index: 15;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    fill: white;
+    fill-opacity: 0.6;
+    margin-bottom: 30px;
+    cursor: pointer;
+    
+}
+
+.contact_info_line {
+    width: 80px;
+    height: 0px;
+    border: 1px solid#C4C4C4;
+    background: #C4C4C4;
+    transform: rotate(90deg);
+    transform-origin: center center;
+    margin-bottom: 70px;
+}
+
+.info_text {
+    
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #C4C4C4;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    margin-bottom: 70px;
+    
+}
+
+.about_theatre {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.header_box {
+    max-width: 1110px;
+    height: 661px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 80px;
+    margin: auto;
+}
+
+.big_theatre {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.header_box_slider {
+    width: 370px;
+    height: 510px;
+}
+
+.owl_image {
+    width: 370px;
+    height: 510px;
+}
+
+.header_box_big_text {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 87px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.header_box_par {
+    font-family:'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-top: 49px;
+}
+
+.header_box_btn {
+    width: 160px;
+    height: 50px;
+    border-radius: 0px;
+    outline: 0px;
+    border: 0px;
+    background: #D1A954;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 49px;
+}
+
+.owl-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+button.owl-prev {
+    outline: none;
+    margin-right: 30px;
+}
+
+button.owl-next {
+    outline: none;
+    margin-left: 30px;
+}
+
+.links_borger_image {
+    display: none;
+}
+
+.header_burger {
+    width: 300px;
+    height: 100vh;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: #333333;
+    transform: translateX(-100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.burger_list_links {
+    height: 305px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.burger_list_links a {
+    text-align: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.burger_social {
+    width: 140px;
+    height: 126px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social_line {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.burger_close {
+   position: absolute;
+   width: 32px;
+   height: 32px;
+   left: 238px;
+   top: 30px;
+
+}
+
+.header_burger._active {
+    transform: translateX(0%);
+    transition: 1s;
+}
+
+.about_theatre_box {
+    width: 1110px;
+    height: 457px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.head_text {
+    width: 100%;
+}
+
+.head_text_text {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.box_info {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+.best_theatre {
+    width: 445px;
+    height: 273px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.best_spb {
+     font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+
+.best_spb_parg {
+    font-family:'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.about_numbers {
+    width: 255px;
+    height: 292px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about_numbers img {
+    width: 70px;
+    height: 70px;
+}
+
+.about_numbers_text {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.andr_chear {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+.ander_theatre {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+.picture {
+    width: 350px;
+    height: 292px;
+}
+
+.picture img {
+    width: 100%;
+    height: 100%;
+}
+
+.slider_section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.slider_box_2 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.slider_box_text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.b_text {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.gold_text {
+    color: #D1A954;
+}
+
+.slider_second {
+    max-width: 1350px;
+}
+
+.owl-second {
+   display: flex;
+}
+
+.owl_image_2 {
+    width: 400px;
+    /* height: 450px; */
+}
+
+.owl-second {
+    width: 100%;
+    height: 100%;
+}
+
+.pre_paris {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paris {
+    width: 1110px;
+    height: 550px;
+    background: url(../img/Rectangle\ 28.jpg);
+    background-size: cover;
+    /* margin: auto; */
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.numbers_2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 98px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #D1A954;
+}
+
+.stars_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.stars_pic {
+    display: flex;
+    gap: 15px;
+}
+
+.stars_text_2 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.gasprom_partners {
+    width: 1110px;
+    height: 500px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.gasprom_text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gasprom_par {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #D1A954;
+}
+
+.third_wrapper {
+    width: 100%;
+    height: 300px;
+    margin-top: 60px;
+}
+
+.last_wrapper_partners {
+    width: 100%;
+    height: 300px;
+    margin-top: 90px;
+}
+
+.owl-third img {
+    width: 200px;
+    height: 96px;
+}
+
+.owl-last img {
+    width: 200px;
+    height: 96px;
+}
+
+.p_theatre {
+    color: white;
+}
+
+.mecenat {
+    width: 1110px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.be_mecenat {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #D1A954;
+}
+
+.mecenat_head_text {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: white;
+}
+
+.mecenat_text {
+    width: 100%;
+    text-align: center;
+}
+
+.mecenat_contacts {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.phone_numbers {
+    width: 255px;
+    height: 143px;
+}
+
+.mail_contacts {
+    width: 730px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nbrs {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+
+.infotheatre {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.inpts {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.txt_btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.btn_text {
+    width: 390px;
+    height: 50px;
+}
+
+.btn_par {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    color: #989898;
+}
+
+.send {
+    width: 190px;
+    height: 50px;
+    background: #D1A954;
+    color: white;
+    border: 0px;
+    outline: none;
+}
+
+.your_contacts {
+    display: flex;
+}
+
+.first_contacts {
+    width: 180px;
+    margin-right: 30px;
+}
+
+.first_contacts input {
+    width: 180px;
+    height: 35px;
+    margin-top: 20px;
+    background: #61616171;
+     border: 1px solid rgba(150, 150, 150, 0.459);
+    outline: none;
+     padding-left: 15px;
+}
+
+.second_contacts {
+    width: 180px;
+}
+
+.second_contacts input {
+     width: 180px;
+    height: 35px;
+    margin-top: 20px;
+     background: #61616171;
+     border: 1px solid rgba(150, 150, 150, 0.459);
+    outline: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 150%;
+    color: #f1f1f1;
+    padding-left: 15px;
+}
+
+.your_comments {
+    width: 310px;
+    height: 93px;
+    margin-top: 20px;
+    background: #61616171;
+    border: 1px solid rgba(150, 150, 150, 0.459);
+    outline: none;
+     padding-left: 15px;
+     padding-top: 10px;
+     resize: none;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-top: 80px;
+
+}
+
+.footer_wrapper {
+    width: 1110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #565656;
+    padding-top: 30px;
+}
+
+.first_p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: right;
+    color: #989898;
+
+}
+
+.second_p {
+        font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: right;
+    color: #989898; 
+}
+
+
+
+@media(max-width:1298px) {
+    .slider_second {
+        width: 690px;
+    }
+
+    .slider_box_2 {
+        align-items: center;
+    }
+
+    .mecenat {
+        width: 900px;
+    }
+
+    .footer_wrapper {
+        width: 900px;
+    }
+
+    .gasprom_partners {
+        width: 900px;
+    }
+
+    .mecenat_contacts {
+        flex-wrap: wrap-reverse;
+    }
+
+    .mecenat_contacts {
+       justify-content: center;
+    }
+
+    .phone_numbers {
+        width: 730px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .infotheatre {
+        margin-top: 0px;
+        text-align: end;
+    }
+}
+
+
+
+@media(max-width:1296px) {
+    .header_box_slider {
+        display: none;
+    }
+    body.lock {
+        overflow: hidden;
+    }
+
+    .picture{
+        display: none;
+    }
+
+    .about_theatre_box {
+        width: 900px;
+    }
+
+    .box_info {
+        justify-content: center;
+    }
+
+    .header_container {
+        flex-direction: column;
+    }
+
+    .header_box {
+        width: 100%;
+        justify-content: center;
+        
+    }
+
+    .links {
+        margin-right: 20px;
+    }
+
+    .big_theatre {
+        width: 700px;
+    }
+
+    .phone {
+        margin-top: 20px;
+    }
+
+    .paris {
+        width: 900px;
+    }
+}
+
+@media(max-width:1050px) {
+    .main_section {
+        height: 100vh;
+    }
+
+    .slider_second {
+        width: 90%;
+    }
+}
+
+@media(max-width:1080px) {
+    .soc_links {
+        display: none;
+    }
+
+    .links_borger_image {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .phone {
+        margin-top: 0px;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .header_container {
+        width: 80%;
+        flex-direction: row;
+    }
+}
+
+@media(max-width:1080px) {
+     .header_box {
+        width: 80%;
+        justify-content: flex-start;
+        
+    }
+}
+
+@media(max-width:920px) {
+    .mecenat {
+        width: 100%;
+    }
+
+    .footer_wrapper {
+        width: 100%;
+    }
+
+    
+}
+
+@media(max-width:768px) {
+    .box_info {
+        flex-direction: column;
+    }
+
+    .third_wrapper {
+        width: 90%;
+    }
+
+    .slider_box_2 {
+        padding-top: 60px;
+    }
+
+    .last_wrapper_partners {
+        width: 90%;
+    }
+
+    .gasprom_partners {
+        width: 100%;
+    }
+
+    .gasprom_par {
+        font-size: 35px;
+    }
+
+    .slider_section {
+        height: 80vh;
+    }
+
+    .b_text {
+        font-size: 35px;
+    }
+
+    .numbers_2 {
+        font-size: 50px;
+        margin-left: 20px;
+    }
+
+    .stars_text_2 {
+        font-size: 25px;
+        margin-left: 20px;
+    }
+
+    .stars_pic {
+        padding-left: 20px;
+    }
+
+    .about_theatre_box {
+        width: 100%;
+        height: auto;
+    }
+
+    .best_theatre {
+        width: 100%;
+        justify-content: space-evenly;
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 40px;
+    }
+
+    .head_text_text {
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+
+    .about_numbers {
+        width: 100%;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+
+    .for_aligne_wrapper {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .best_spb {
+        margin-bottom: 20px;
+    }
+
+    .inpts {
+        flex-direction: column;
+    }
+
+    .your_comments {
+        width: 390px;
+    }
+
+    .mecenat_contacts {
+        height: 700px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .txt_btn {
+        flex-direction: column-reverse;
+    }
+
+    .footer {
+        margin-top: 0px;
+    }
+
+    .btn_par {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .mecenat_head_text {
+        font-size: 35px;
+    }
+
+    .be_mecenat {
+        font-size: 35px;
+    }
+
+    .infotheatre {
+        font-size: 14px;
+    }
+
+    .phone_numbers {
+        width: 100%;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-top: 30px;
+    }
+        
+}
+
+@media(max-width:576px) {
+    .header_box {
+        height: 500px;
+    }
+
+    .about_theatre {
+        height: 700px;
+        padding-top: 60px;
+    }
+
+    .main_section{
+        height: 100vh;
+    }
+}
+
+@media(max-width:376px) {
+    .first_contacts {
+        margin-right: 10px;
+    }
+
+    .your_comments {
+        width: 95%;
+    }
+
+    .phone_numbers {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    .your_contacts {
+       width: 95%;
+    }
+
+    .txt_btn {
+        width: 95%;
+    }
+}
+
+@media(max-width:321px) {
+    .header_box_big_text {
+        font-size: 50px;
+    }
+
+    .main_section{
+        height: 700px;
+    }
+
+    .stars_pic img {
+        width: 20px;
+    }
+
+    .stars_text_2 {
+        font-size: 23px;
+    }
+
+    .b_text {
+        font-size: 28px;
+    }
+
+    .head_text_text {
+        font-size: 40px;
+    }
+
+    .gasprom_par {
+        font-size: 30px;
+    }
+}
